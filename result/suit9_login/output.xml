@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.6 on linux)" generated="20230704 12:53:42.102" rpa="false" schemaversion="4">
+<suite id="s1" name="5 login Worker" source="/home/guy/Desktop/robotframework/5_login_Worker.robot">
+<test id="s1-t1" name="Login To App using Valid User &amp; Password" line="21">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:53:42.312" endtime="20230704 12:53:47.915"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:42.311" endtime="20230704 12:53:47.915"/>
+</kw>
+<kw name="Input Username Text">
+<arg>${username}</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:53:47.919" level="INFO">Typing text 'nhuddlestone0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:53:48.753" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:53:47.916" endtime="20230704 12:53:48.753"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:47.916" endtime="20230704 12:53:48.754"/>
+</kw>
+<kw name="Input Password Text">
+<arg>${password}</arg>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:53:48.759" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:53:49.838" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:53:48.756" endtime="20230704 12:53:49.840"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:48.754" endtime="20230704 12:53:49.841"/>
+</kw>
+<kw name="Press Login">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:53:49.848" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:53:50.462" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:53:49.844" endtime="20230704 12:53:50.462"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:49.843" endtime="20230704 12:53:50.462"/>
+</kw>
+<kw name="Should See Task Plan">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Tasks Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:53:50.465" endtime="20230704 12:53:53.660"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Tasks Plan</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:53:53.906" level="INFO">Current page contains text 'Tasks Plan'.</msg>
+<status status="PASS" starttime="20230704 12:53:53.661" endtime="20230704 12:53:53.906"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:50.464" endtime="20230704 12:53:53.907"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:53:53.912" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:53:54.226" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:53:53.909" endtime="20230704 12:53:54.228"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:53.908" endtime="20230704 12:53:54.228"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:42.309" endtime="20230704 12:53:54.229"/>
+</test>
+<test id="s1-t2" name="Login To App using Valid User Invalid Password" line="28">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:53:54.232" endtime="20230704 12:54:00.413"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:54.231" endtime="20230704 12:54:00.413"/>
+</kw>
+<kw name="Input Username Text">
+<arg>${username}</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:00.418" level="INFO">Typing text 'nhuddlestone0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:00.784" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:00.415" endtime="20230704 12:54:00.784"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:00.414" endtime="20230704 12:54:00.784"/>
+</kw>
+<kw name="Input Password Text">
+<arg>${wrong_username}</arg>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:00.789" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:02.028" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:00.786" endtime="20230704 12:54:02.030"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:00.785" endtime="20230704 12:54:02.031"/>
+</kw>
+<kw name="Press Login">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:02.041" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:54:02.662" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:54:02.034" endtime="20230704 12:54:02.662"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:02.032" endtime="20230704 12:54:02.663"/>
+</kw>
+<kw name="Should See Failed to Login Message">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:54:02.664" endtime="20230704 12:54:03.441"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:54:03.517" level="INFO">Current page contains text 'Email or Password incorrect'.</msg>
+<status status="PASS" starttime="20230704 12:54:03.441" endtime="20230704 12:54:03.517"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:02.663" endtime="20230704 12:54:03.517"/>
+</kw>
+<status status="PASS" starttime="20230704 12:53:54.230" endtime="20230704 12:54:03.517"/>
+</test>
+<test id="s1-t3" name="Login To App using InValid User Valid Password" line="34">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:54:03.519" endtime="20230704 12:54:07.945"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:03.519" endtime="20230704 12:54:07.945"/>
+</kw>
+<kw name="Input Username Text">
+<arg>${username}</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:07.949" level="INFO">Typing text 'nhuddlestone0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:08.738" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:07.946" endtime="20230704 12:54:08.738"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:07.946" endtime="20230704 12:54:08.739"/>
+</kw>
+<kw name="Input Password Text">
+<arg>${wrong_username}</arg>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:08.743" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:09.864" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:08.740" endtime="20230704 12:54:09.865"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:08.739" endtime="20230704 12:54:09.865"/>
+</kw>
+<kw name="Press Login">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:09.872" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:54:10.478" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:54:09.868" endtime="20230704 12:54:10.478"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:09.867" endtime="20230704 12:54:10.478"/>
+</kw>
+<kw name="Should See Failed to Login Message">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:54:10.479" endtime="20230704 12:54:11.285"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:54:11.383" level="INFO">Current page contains text 'Email or Password incorrect'.</msg>
+<status status="PASS" starttime="20230704 12:54:11.286" endtime="20230704 12:54:11.384"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:10.479" endtime="20230704 12:54:11.384"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:03.518" endtime="20230704 12:54:11.384"/>
+</test>
+<test id="s1-t4" name="Login To App using InValid User &amp; Password" line="40">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:54:11.386" endtime="20230704 12:54:16.267"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:11.386" endtime="20230704 12:54:16.268"/>
+</kw>
+<kw name="Input Username Text">
+<arg>${username}</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:16.271" level="INFO">Typing text 'nhuddlestone0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:16.536" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:16.269" endtime="20230704 12:54:16.536"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:16.268" endtime="20230704 12:54:16.536"/>
+</kw>
+<kw name="Input Password Text">
+<arg>${wrong_username}</arg>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:16.541" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:54:17.628" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:54:16.538" endtime="20230704 12:54:17.629"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:16.537" endtime="20230704 12:54:17.629"/>
+</kw>
+<kw name="Press Login">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:54:17.633" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:54:18.163" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:54:17.630" endtime="20230704 12:54:18.163"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:17.629" endtime="20230704 12:54:18.164"/>
+</kw>
+<kw name="Should See Failed to Login Message">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:54:18.165" endtime="20230704 12:54:18.900"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Email or Password incorrect</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:54:18.993" level="INFO">Current page contains text 'Email or Password incorrect'.</msg>
+<status status="PASS" starttime="20230704 12:54:18.900" endtime="20230704 12:54:18.994"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:18.165" endtime="20230704 12:54:18.994"/>
+</kw>
+<status status="PASS" starttime="20230704 12:54:11.385" endtime="20230704 12:54:18.994"/>
+</test>
+<status status="PASS" starttime="20230704 12:53:42.106" endtime="20230704 12:54:18.996"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="5 login Worker">5 login Worker</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

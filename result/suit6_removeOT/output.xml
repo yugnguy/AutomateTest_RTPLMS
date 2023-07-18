@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.6 on linux)" generated="20230704 12:40:36.977" rpa="false" schemaversion="4">
+<suite id="s1" name="3 Dep Details Remove Ot" source="/home/guy/Desktop/robotframework/3_dep_details_remove_ot.robot">
+<test id="s1-t1" name="Remove 1 OT Request" line="17">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:40:37.217" endtime="20230704 12:40:41.927"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:37.216" endtime="20230704 12:40:41.928"/>
+</kw>
+<kw name="Login To App">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>ghateley0</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:41.931" level="INFO">Typing text 'ghateley0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:40:42.694" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:40:41.929" endtime="20230704 12:40:42.694"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>BtNMJU</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:42.697" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:40:43.755" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:40:42.695" endtime="20230704 12:40:43.755"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:43.760" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:40:44.339" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:40:43.756" endtime="20230704 12:40:44.339"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:41.928" endtime="20230704 12:40:44.340"/>
+</kw>
+<kw name="Go to Boiling Detail Page">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:44.341" endtime="20230704 12:40:46.016"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Boiling</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:46.016" endtime="20230704 12:40:46.113"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:46.116" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230704 12:40:46.239" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230704 12:40:46.114" endtime="20230704 12:40:46.240"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ไม่สำเร็จในเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:46.240" endtime="20230704 12:40:49.666"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:44.340" endtime="20230704 12:40:49.666"/>
+</kw>
+<kw name="Select OT Plan Table">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>OT Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:49.667" endtime="20230704 12:40:49.781"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:49.782" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:40:49.917" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:40:49.781" endtime="20230704 12:40:49.918"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:49.667" endtime="20230704 12:40:49.918"/>
+</kw>
+<kw name="Open Remove OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:49.922" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button'.</msg>
+<msg timestamp="20230704 12:40:50.169" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</msg>
+<status status="PASS" starttime="20230704 12:40:49.919" endtime="20230704 12:40:50.170"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ลดงานล่วงเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:50.170" endtime="20230704 12:40:52.496"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:49.919" endtime="20230704 12:40:52.497"/>
+</kw>
+<kw name="Select 1 OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:52.500" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:40:52.598" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:40:52.498" endtime="20230704 12:40:52.599"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:52.497" endtime="20230704 12:40:52.599"/>
+</kw>
+<kw name="Go to Confirm Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Next</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:40:52.716" level="INFO">xpath criteria: //*[contains(@text,"Next")]</msg>
+<status status="PASS" starttime="20230704 12:40:52.601" endtime="20230704 12:40:52.717"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:52.717" endtime="20230704 12:40:52.774"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Perf.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:52.774" endtime="20230704 12:40:53.974"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Hours</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:53.974" endtime="20230704 12:40:54.006"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:52.600" endtime="20230704 12:40:54.007"/>
+</kw>
+<kw name="Confirm OT Request">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Confirm</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:40:54.115" level="INFO">xpath criteria: //*[contains(@text,"Confirm")]</msg>
+<status status="PASS" starttime="20230704 12:40:54.008" endtime="20230704 12:40:54.117"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:54.007" endtime="20230704 12:40:54.117"/>
+</kw>
+<kw name="See Notification Text">
+<arg>Remove OT requests successful</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:40:54.122" endtime="20230704 12:40:56.595"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:40:56.680" level="INFO">Current page contains text 'Remove OT requests successful'.</msg>
+<status status="PASS" starttime="20230704 12:40:56.595" endtime="20230704 12:40:56.680"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:54.119" endtime="20230704 12:40:56.680"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:40:56.684" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:40:56.823" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:40:56.682" endtime="20230704 12:40:56.824"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:56.681" endtime="20230704 12:40:56.824"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230704 12:40:56.825" endtime="20230704 12:40:56.969"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:37.215" endtime="20230704 12:40:56.969"/>
+</test>
+<test id="s1-t2" name="Remove OT Requests" line="28">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:40:56.973" endtime="20230704 12:41:00.813"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:56.971" endtime="20230704 12:41:00.813"/>
+</kw>
+<kw name="Login To App">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>ghateley0</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:00.817" level="INFO">Typing text 'ghateley0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:01.986" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:00.814" endtime="20230704 12:41:01.986"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>BtNMJU</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:01.993" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:03.043" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:01.987" endtime="20230704 12:41:03.044"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:03.046" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:03.591" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:03.044" endtime="20230704 12:41:03.592"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:00.814" endtime="20230704 12:41:03.592"/>
+</kw>
+<kw name="Go to Boiling Detail Page">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:03.593" endtime="20230704 12:41:05.161"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Boiling</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:05.161" endtime="20230704 12:41:05.253"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:05.255" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230704 12:41:05.390" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230704 12:41:05.253" endtime="20230704 12:41:05.390"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ไม่สำเร็จในเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:05.391" endtime="20230704 12:41:08.969"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:03.593" endtime="20230704 12:41:08.969"/>
+</kw>
+<kw name="Select OT Plan Table">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>OT Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:08.970" endtime="20230704 12:41:09.090"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:09.092" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:09.256" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:09.091" endtime="20230704 12:41:09.256"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:08.969" endtime="20230704 12:41:09.256"/>
+</kw>
+<kw name="Open Remove OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:09.260" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button'.</msg>
+<msg timestamp="20230704 12:41:09.560" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</msg>
+<status status="PASS" starttime="20230704 12:41:09.257" endtime="20230704 12:41:09.560"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ลดงานล่วงเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:09.560" endtime="20230704 12:41:11.700"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:09.257" endtime="20230704 12:41:11.700"/>
+</kw>
+<kw name="Select OT Requests">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:11.703" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:11.804" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:11.701" endtime="20230704 12:41:11.805"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:11.807" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:11.888" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:11.805" endtime="20230704 12:41:11.888"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:11.700" endtime="20230704 12:41:11.888"/>
+</kw>
+<kw name="Go to Confirm Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Next</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:12.021" level="INFO">xpath criteria: //*[contains(@text,"Next")]</msg>
+<status status="PASS" starttime="20230704 12:41:11.890" endtime="20230704 12:41:12.021"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:12.022" endtime="20230704 12:41:12.082"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Perf.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:12.082" endtime="20230704 12:41:13.350"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Hours</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:13.350" endtime="20230704 12:41:13.383"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:11.889" endtime="20230704 12:41:13.383"/>
+</kw>
+<kw name="Confirm OT Request">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Confirm</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:13.468" level="INFO">xpath criteria: //*[contains(@text,"Confirm")]</msg>
+<status status="PASS" starttime="20230704 12:41:13.384" endtime="20230704 12:41:13.469"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:13.384" endtime="20230704 12:41:13.469"/>
+</kw>
+<kw name="See Notification Text">
+<arg>Remove OT requests successful</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:13.470" endtime="20230704 12:41:16.506"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:41:16.595" level="INFO">Current page contains text 'Remove OT requests successful'.</msg>
+<status status="PASS" starttime="20230704 12:41:16.507" endtime="20230704 12:41:16.595"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:13.469" endtime="20230704 12:41:16.595"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:16.597" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:16.770" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:16.596" endtime="20230704 12:41:16.771"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:16.596" endtime="20230704 12:41:16.771"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230704 12:41:16.771" endtime="20230704 12:41:16.925"/>
+</kw>
+<status status="PASS" starttime="20230704 12:40:56.970" endtime="20230704 12:41:16.925"/>
+</test>
+<test id="s1-t3" name="Remove Failed" line="39">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:41:16.928" endtime="20230704 12:41:20.598"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:16.927" endtime="20230704 12:41:20.598"/>
+</kw>
+<kw name="Login To App">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>ghateley0</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:20.601" level="INFO">Typing text 'ghateley0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:20.873" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:20.599" endtime="20230704 12:41:20.873"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>BtNMJU</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:20.877" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:21.972" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:20.874" endtime="20230704 12:41:21.973"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:21.977" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:22.564" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:21.974" endtime="20230704 12:41:22.564"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:20.598" endtime="20230704 12:41:22.564"/>
+</kw>
+<kw name="Go to Boiling Detail Page">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:22.566" endtime="20230704 12:41:24.287"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Boiling</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:24.287" endtime="20230704 12:41:24.383"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:24.385" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230704 12:41:24.510" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230704 12:41:24.384" endtime="20230704 12:41:24.511"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ไม่สำเร็จในเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:24.511" endtime="20230704 12:41:27.790"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:22.565" endtime="20230704 12:41:27.791"/>
+</kw>
+<kw name="Select OT Plan Table">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>OT Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:27.792" endtime="20230704 12:41:27.907"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:27.909" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:28.042" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:27.908" endtime="20230704 12:41:28.043"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:27.791" endtime="20230704 12:41:28.043"/>
+</kw>
+<kw name="Open Remove OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:28.047" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button'.</msg>
+<msg timestamp="20230704 12:41:28.316" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</msg>
+<status status="PASS" starttime="20230704 12:41:28.044" endtime="20230704 12:41:28.316"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ลดงานล่วงเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:28.317" endtime="20230704 12:41:30.488"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:28.044" endtime="20230704 12:41:30.490"/>
+</kw>
+<kw name="Go to Confirm Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Next</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:30.643" level="INFO">xpath criteria: //*[contains(@text,"Next")]</msg>
+<status status="PASS" starttime="20230704 12:41:30.492" endtime="20230704 12:41:30.643"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:30.643" endtime="20230704 12:41:30.700"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Perf.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:30.701" endtime="20230704 12:41:31.709"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Hours</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:31.710" endtime="20230704 12:41:31.741"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:30.491" endtime="20230704 12:41:31.741"/>
+</kw>
+<kw name="Confirm OT Request">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Confirm</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:31.823" level="INFO">xpath criteria: //*[contains(@text,"Confirm")]</msg>
+<status status="PASS" starttime="20230704 12:41:31.742" endtime="20230704 12:41:31.823"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:31.742" endtime="20230704 12:41:31.824"/>
+</kw>
+<kw name="See Notification Text">
+<arg>Remove OT requests failed</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:31.825" endtime="20230704 12:41:33.398"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:41:33.478" level="INFO">Current page contains text 'Remove OT requests failed'.</msg>
+<status status="PASS" starttime="20230704 12:41:33.398" endtime="20230704 12:41:33.478"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:31.824" endtime="20230704 12:41:33.478"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:33.480" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:33.641" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:33.479" endtime="20230704 12:41:33.642"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:33.479" endtime="20230704 12:41:33.642"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230704 12:41:33.642" endtime="20230704 12:41:33.774"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:16.926" endtime="20230704 12:41:33.775"/>
+</test>
+<test id="s1-t4" name="Remove and reselect worker" line="50">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:41:33.777" endtime="20230704 12:41:37.505"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:33.776" endtime="20230704 12:41:37.505"/>
+</kw>
+<kw name="Login To App">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>ghateley0</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:37.509" level="INFO">Typing text 'ghateley0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:38.284" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:37.506" endtime="20230704 12:41:38.285"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>BtNMJU</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:38.292" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:39.347" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:38.286" endtime="20230704 12:41:39.347"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:39.350" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:39.935" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:39.348" endtime="20230704 12:41:39.935"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:37.506" endtime="20230704 12:41:39.936"/>
+</kw>
+<kw name="Go to Boiling Detail Page">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:39.937" endtime="20230704 12:41:41.510"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Boiling</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:41.510" endtime="20230704 12:41:41.607"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:41.609" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230704 12:41:41.736" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230704 12:41:41.608" endtime="20230704 12:41:41.737"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ไม่สำเร็จในเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:41.737" endtime="20230704 12:41:45.032"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:39.936" endtime="20230704 12:41:45.032"/>
+</kw>
+<kw name="Select OT Plan Table">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>OT Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:45.033" endtime="20230704 12:41:45.164"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:45.165" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:41:45.316" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:45.164" endtime="20230704 12:41:45.316"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:45.033" endtime="20230704 12:41:45.316"/>
+</kw>
+<kw name="Open Remove OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:45.319" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button'.</msg>
+<msg timestamp="20230704 12:41:45.607" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</msg>
+<status status="PASS" starttime="20230704 12:41:45.318" endtime="20230704 12:41:45.607"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ลดงานล่วงเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:45.607" endtime="20230704 12:41:48.565"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:45.317" endtime="20230704 12:41:48.566"/>
+</kw>
+<kw name="Select 1 OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:48.569" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:48.683" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:48.567" endtime="20230704 12:41:48.683"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:48.566" endtime="20230704 12:41:48.683"/>
+</kw>
+<kw name="Back to Select Worker Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Previous</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:48.783" level="INFO">xpath criteria: //*[contains(@text,"Previous")]</msg>
+<status status="PASS" starttime="20230704 12:41:48.684" endtime="20230704 12:41:48.784"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:48.684" endtime="20230704 12:41:48.784"/>
+</kw>
+<kw name="Select OT Requests">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:48.787" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:48.881" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:48.785" endtime="20230704 12:41:48.882"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:48.884" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:49.657" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:48.882" endtime="20230704 12:41:49.658"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:48.784" endtime="20230704 12:41:49.659"/>
+</kw>
+<kw name="Go to Confirm Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Next</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:49.850" level="INFO">xpath criteria: //*[contains(@text,"Next")]</msg>
+<status status="PASS" starttime="20230704 12:41:49.664" endtime="20230704 12:41:49.850"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:49.851" endtime="20230704 12:41:49.897"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Perf.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:49.898" endtime="20230704 12:41:51.052"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Hours</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:51.053" endtime="20230704 12:41:51.084"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:49.662" endtime="20230704 12:41:51.084"/>
+</kw>
+<kw name="Confirm OT Request">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Confirm</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:41:51.197" level="INFO">xpath criteria: //*[contains(@text,"Confirm")]</msg>
+<status status="PASS" starttime="20230704 12:41:51.085" endtime="20230704 12:41:51.198"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:51.085" endtime="20230704 12:41:51.198"/>
+</kw>
+<kw name="See Notification Text">
+<arg>Remove OT requests successful</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:41:51.199" endtime="20230704 12:41:53.367"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:41:53.450" level="INFO">Current page contains text 'Remove OT requests successful'.</msg>
+<status status="PASS" starttime="20230704 12:41:53.367" endtime="20230704 12:41:53.450"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:51.198" endtime="20230704 12:41:53.450"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:53.453" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:41:53.574" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:41:53.451" endtime="20230704 12:41:53.575"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:53.450" endtime="20230704 12:41:53.576"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230704 12:41:53.579" endtime="20230704 12:41:53.777"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:33.775" endtime="20230704 12:41:53.778"/>
+</test>
+<test id="s1-t5" name="Remove &amp; use Search-bar" line="64">
+<kw name="Lunch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:platformVersion=${appium:platformVersion}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<arg>appium:ensureWebviewsHavePages=${appium:ensureWebviewsHavePages}</arg>
+<arg>appium:nativeWebScreenshot=${appium:nativeWebScreenshot}</arg>
+<arg>appium:newCommandTimeout=${appium:newCommandTimeout}</arg>
+<arg>appium:connectHardwareKeyboard=${appium:connectHardwareKeyboard}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230704 12:41:53.780" endtime="20230704 12:41:57.611"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:53.779" endtime="20230704 12:41:57.612"/>
+</kw>
+<kw name="Login To App">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>ghateley0</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:57.615" level="INFO">Typing text 'ghateley0' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:58.476" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:57.613" endtime="20230704 12:41:58.476"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>BtNMJU</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:58.481" level="INFO">Typing password into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:41:59.560" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:41:58.477" endtime="20230704 12:41:59.561"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:41:59.568" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:42:00.176" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:41:59.562" endtime="20230704 12:42:00.176"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:57.612" endtime="20230704 12:42:00.176"/>
+</kw>
+<kw name="Go to Boiling Detail Page">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:00.177" endtime="20230704 12:42:01.798"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Boiling</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:01.798" endtime="20230704 12:42:01.897"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:01.899" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230704 12:42:02.024" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230704 12:42:01.897" endtime="20230704 12:42:02.024"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ไม่สำเร็จในเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:02.025" endtime="20230704 12:42:05.457"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:00.177" endtime="20230704 12:42:05.457"/>
+</kw>
+<kw name="Select OT Plan Table">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>OT Plan</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:05.459" endtime="20230704 12:42:05.592"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:05.595" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]'.</msg>
+<msg timestamp="20230704 12:42:05.740" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.View/android.view.ViewGroup[2]</msg>
+<status status="PASS" starttime="20230704 12:42:05.593" endtime="20230704 12:42:05.741"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:05.458" endtime="20230704 12:42:05.741"/>
+</kw>
+<kw name="Open Remove OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:05.744" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button'.</msg>
+<msg timestamp="20230704 12:42:06.012" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.Button</msg>
+<status status="PASS" starttime="20230704 12:42:05.742" endtime="20230704 12:42:06.012"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>ลดงานล่วงเวลา</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:06.012" endtime="20230704 12:42:07.901"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:05.742" endtime="20230704 12:42:07.901"/>
+</kw>
+<kw name="Back to Select Worker Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Previous</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:42:07.989" level="INFO">xpath criteria: //*[contains(@text,"Previous")]</msg>
+<status status="PASS" starttime="20230704 12:42:07.902" endtime="20230704 12:42:07.990"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:07.902" endtime="20230704 12:42:07.990"/>
+</kw>
+<kw name="Search Worker by Search-bar">
+<arg>Shalne Rizzi</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:07.994" level="INFO">Typing text 'Shalne Rizzi' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText'</msg>
+<msg timestamp="20230704 12:42:08.593" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText</msg>
+<status status="PASS" starttime="20230704 12:42:07.991" endtime="20230704 12:42:08.594"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:42:08.762" level="INFO">Current page contains text 'Shalne Rizzi'.</msg>
+<status status="PASS" starttime="20230704 12:42:08.594" endtime="20230704 12:42:08.762"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:07.990" endtime="20230704 12:42:08.763"/>
+</kw>
+<kw name="Select 1 OT Request">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:08.769" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:42:09.588" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.CheckBox/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:42:08.765" endtime="20230704 12:42:09.588"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:08.764" endtime="20230704 12:42:09.589"/>
+</kw>
+<kw name="Go to Confirm Page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Next</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:42:09.686" level="INFO">xpath criteria: //*[contains(@text,"Next")]</msg>
+<status status="PASS" starttime="20230704 12:42:09.590" endtime="20230704 12:42:09.686"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:09.687" endtime="20230704 12:42:09.731"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Perf.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:09.731" endtime="20230704 12:42:10.791"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Hours</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:10.792" endtime="20230704 12:42:10.828"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:09.589" endtime="20230704 12:42:10.828"/>
+</kw>
+<kw name="Confirm OT Request">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Confirm</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20230704 12:42:10.921" level="INFO">xpath criteria: //*[contains(@text,"Confirm")]</msg>
+<status status="PASS" starttime="20230704 12:42:10.829" endtime="20230704 12:42:10.921"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:10.828" endtime="20230704 12:42:10.921"/>
+</kw>
+<kw name="See Notification Text">
+<arg>Remove OT requests successful</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20230704 12:42:10.923" endtime="20230704 12:42:12.907"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230704 12:42:13.004" level="INFO">Current page contains text 'Remove OT requests successful'.</msg>
+<status status="PASS" starttime="20230704 12:42:12.908" endtime="20230704 12:42:13.004"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:10.922" endtime="20230704 12:42:13.004"/>
+</kw>
+<kw name="Log-out">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230704 12:42:13.007" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView'.</msg>
+<msg timestamp="20230704 12:42:13.140" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button/android.view.ViewGroup/android.widget.TextView</msg>
+<status status="PASS" starttime="20230704 12:42:13.005" endtime="20230704 12:42:13.140"/>
+</kw>
+<status status="PASS" starttime="20230704 12:42:13.005" endtime="20230704 12:42:13.140"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230704 12:42:13.141" endtime="20230704 12:42:13.316"/>
+</kw>
+<status status="PASS" starttime="20230704 12:41:53.778" endtime="20230704 12:42:13.317"/>
+</test>
+<status status="PASS" starttime="20230704 12:40:36.981" endtime="20230704 12:42:13.319"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="3 Dep Details Remove Ot">3 Dep Details Remove Ot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
